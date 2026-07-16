@@ -93,7 +93,6 @@ Instead,
 
 ---
 
-# 🖼️ Diagram
 <img width="800" height="450" alt="image" src="https://github.com/user-attachments/assets/653a95ad-5f50-4e4a-817b-61b7e556ec22" />
 
 
@@ -319,7 +318,6 @@ This increases development time.
 
 ---
 
-# 🖼️ Suggested Diagram
 <img width="904" height="1727" alt="image" src="https://github.com/user-attachments/assets/7b5f725f-d737-4bd3-a0cb-acd49776a13d" />
 
 
