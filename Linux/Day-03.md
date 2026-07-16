@@ -178,9 +178,6 @@ Windows is mainly designed for desktop users.
 Linux is designed for performance, security, and stability.
 
 ---
-
-# 🖥️ What is a Server?
-
 # 🖥️ What is a Server?
 
 A **Server** is a powerful computer that provides services to other computers over a network.
@@ -239,11 +236,60 @@ It is known for:
 
 # 🏗️ Architecture of Linux
 
-1. **Kernel** → Core of the OS (manages hardware)
-2. **System Libraries** → Provide system functionality
-3. **System Utilities** → Management tools
-4. **Shell** → Command interface
-5. **Applications** → User software
+## Components
+
+### 🧠 Kernel
+
+The brain of Linux.
+
+It communicates directly with the hardware.
+
+---
+
+### 💻 Shell
+
+The command interpreter.
+
+It accepts commands from the user.
+
+Example:
+
+```bash
+pwd
+ls
+mkdir
+```
+
+---
+
+### 📚 System Libraries
+
+Provide important functions required by applications.
+
+---
+
+### ⚙️ System Utilities
+
+Tools used to manage the operating system.
+
+Examples:
+
+- ls
+- cp
+- mv
+- mkdir
+
+---
+
+### 📦 Applications
+
+Software installed by users.
+
+Examples:
+
+- Chrome
+- VS Code
+- Firefox
 
 ---
 
