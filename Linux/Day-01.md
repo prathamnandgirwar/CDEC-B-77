@@ -94,6 +94,7 @@ Instead,
 ---
 
 # 🖼️ Diagram
+<img width="800" height="450" alt="image" src="https://github.com/user-attachments/assets/653a95ad-5f50-4e4a-817b-61b7e556ec22" />
 
 
 
@@ -304,21 +305,10 @@ Without monitoring and feedback:
 
 # 📊 Traditional Software Development Process
 
-```mermaid
-flowchart LR
+```
+<img width="3392" height="460" alt="image" src="https://github.com/user-attachments/assets/d1c45936-86e3-41e7-b2ef-932c9beb31ee" />
 
-A[Business Requirement]
-B[Development Team]
-C[Testing Team]
-D[Operations Team]
-E[Production]
-F[Customer]
 
-A --> B
-B --> C
-C --> D
-D --> E
-E --> F
 ```
 
 In this model, every team works one after another.
@@ -330,43 +320,9 @@ This increases development time.
 ---
 
 # 🖼️ Suggested Diagram
+<img width="904" height="1727" alt="image" src="https://github.com/user-attachments/assets/7b5f725f-d737-4bd3-a0cb-acd49776a13d" />
 
-Create this in **draw.io** and save it as:
 
-```
-images/traditional-it-workflow.png
-```
-
-```markdown
-![Traditional IT Workflow](images/traditional-it-workflow.png)
-```
-
-Suggested layout:
-
-```
-Requirement
-
-↓
-
-Development
-
-↓
-
-Testing
-
-↓
-
-Operations
-
-↓
-
-Production
-
-↓
-
-Customer
-
-❌ Very Little Communication Between Teams
 ```
 
 ---
