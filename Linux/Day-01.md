@@ -299,7 +299,6 @@ Without monitoring and feedback:
 - Bugs remained unnoticed.
 - Performance issues increased.
 - Customer complaints grew.
-
 ---
 
 # 📊 Traditional Software Development Process
@@ -311,7 +310,6 @@ In this model, every team works one after another.
 If any issue occurs, the process starts again.
 
 This increases development time.
-
 
 ---
 
