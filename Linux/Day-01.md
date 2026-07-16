@@ -96,7 +96,7 @@ Instead,
 # 🖼️ Diagram
 
 ```
-[images/devops-introduction.png](https://www.dynatrace.com/news/blog/what-is-devops/)
+https://www.dynatrace.com/news/blog/what-is-devops/
 ```
 
 Then add:
