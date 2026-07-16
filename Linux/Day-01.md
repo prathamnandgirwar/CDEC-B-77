@@ -16,8 +16,6 @@
 - What is an Application?
 - Developers vs Testers vs DevOps
 - Summary
-- Quick Quiz
-- Homework
 
 ---
 
