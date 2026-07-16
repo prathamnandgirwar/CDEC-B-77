@@ -446,6 +446,120 @@ This is why companies like Amazon, Netflix, Google, and Microsoft use DevOps pra
 ---
 
 
+## 📌 Stages of DevOps Lifecycle
+
+| Stage | Description |
+|--------|-------------|
+| 📝 Plan | Gather requirements and plan new features. |
+| 💻 Develop | Developers write the application code. |
+| 🔨 Build | Convert source code into an executable application. |
+| 🧪 Test | Check the application for bugs and issues. |
+| 🚀 Deploy | Release the application to users. |
+| ⚙️ Operate | Keep the application running smoothly. |
+| 📊 Monitor | Monitor performance and collect feedback. |
+
+> 💡 **Remember:** DevOps is a continuous cycle, not a one-time process.
+
+---
+
+# 🏢 How an IT Company Works
+
+Every software company follows a structured workflow to develop and deliver applications.
+
+## 📌 Workflow
+
+### 👨‍💼 Business Team
+- Understands client requirements.
+- Creates project documentation.
+
+### 👨‍💻 Development Team
+- Writes application code.
+- Adds new features.
+- Fixes bugs.
+
+### 🧪 Testing Team (QA)
+- Tests the application.
+- Reports bugs.
+- Ensures software quality.
+
+### 🚀 DevOps Team
+- Automates deployment.
+- Manages servers and cloud infrastructure.
+- Monitors the application after deployment.
+
+### 👤 Customer
+- Uses the application.
+- Provides feedback for future improvements.
+
+> 💡 **Goal:** Deliver high-quality software to customers quickly and reliably.
+
+---
+
+# 💻 What is an Application?
+
+An **Application** (or App) is a software program designed to perform specific tasks for users.
+
+### 🌍 Examples
+
+- 📱 WhatsApp
+- 📸 Instagram
+- 🛒 Amazon
+- 🎬 Netflix
+- 💳 PhonePe
+
+---
+
+## 🏗️ Components of an Application
+
+### 🎨 Frontend
+The part of the application that users can see and interact with.
+
+**Examples:** Buttons, Login Page, Dashboard
+
+---
+
+### ⚙️ Backend
+The brain of the application.
+
+It processes requests, performs calculations, and communicates with the database.
+
+---
+
+### 🗄️ Database
+Stores all application data permanently.
+
+**Examples of data:**
+- User details
+- Passwords
+- Orders
+- Products
+- Payments
+
+---
+
+## 📱 Types of Applications
+
+| Type | Example |
+|------|---------|
+| 🌐 Web Application | Gmail, Facebook |
+| 📱 Mobile Application | WhatsApp, Instagram |
+| 🖥️ Desktop Application | MS Word, Photoshop |
+| ☁️ Cloud Application | Google Drive, Dropbox |
+
+> 💡 Every modern application is mainly made up of **Frontend + Backend + Database**.
+
+---
+
+# 👨‍💻 Developers vs 🧪 Testers vs 🚀 DevOps
+
+Every software project involves different teams, and each team has a specific responsibility.
+
+| Role | Responsibility | Examples of Tools |
+|------|----------------|------------------|
+| 👨‍💻 Developer | Writes application code and adds new features. | VS Code, IntelliJ, Git |
+| 🧪 Tester (QA) | Tests the application and reports bugs. | Selenium, JUnit |
+| 🚀 DevOps Engineer | Deploys applications, automates tasks, and manages servers. | Git, Jenkins, Docker, Kubernetes, AWS |
+
 ---
 
 # 📖 Did You Know?
