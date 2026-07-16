@@ -236,61 +236,57 @@ It is known for:
 
 # 🏗️ Architecture of Linux
 
-## Components
+## 📖 Components of Linux Architecture
 
-### 🧠 Kernel
+### 👤 User
+The person who uses the computer by running applications or typing commands.
 
-The brain of Linux.
-
-It communicates directly with the hardware.
-
----
+### 🖥️ Applications
+Software such as **Chrome, VS Code, Firefox, and VLC** that users interact with daily.
 
 ### 💻 Shell
+The **command interpreter** that accepts commands from the user and passes them to the Kernel.
 
-The command interpreter.
-
-It accepts commands from the user.
-
-Example:
-
+**Example:**
 ```bash
 pwd
-ls
-mkdir
+mkdir DevOps
 ```
 
----
-
 ### 📚 System Libraries
+Pre-written code that helps applications communicate with the Kernel without directly accessing it.
 
-Provide important functions required by applications.
+### 🧠 Kernel
+The **core (heart) of Linux**. It manages hardware resources like the CPU, memory, storage, and connected devices.
 
----
-
-### ⚙️ System Utilities
-
-Tools used to manage the operating system.
-
-Examples:
-
-- ls
-- cp
-- mv
-- mkdir
+### ⚙️ Hardware
+The physical components of the computer, such as the **CPU, RAM, Hard Disk, Keyboard, Mouse, and Monitor**.
 
 ---
 
-### 📦 Applications
+## 🔄 How It Works
 
-Software installed by users.
+When you type a command like:
 
-Examples:
+```bash
+mkdir DevOps
+```
 
-- Chrome
-- VS Code
-- Firefox
+The request follows this path:
 
+```text
+👤 User
+    ↓
+💻 Shell
+    ↓
+🧠 Kernel
+    ↓
+⚙️ Hardware
+    ↓
+📁 Folder Created
+```
+
+> 💡 **Remember:** The **Kernel is the heart of Linux**. Every command and application ultimately depends on the Kernel to communicate with the hardware.
 ---
 
 <img width="1024" height="728" alt="image" src="https://github.com/user-attachments/assets/e86c9e57-9244-44d7-9a8b-a3b2dc2d77fb" />
