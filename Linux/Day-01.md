@@ -305,7 +305,6 @@ Without monitoring and feedback:
 
 <img width="3392" height="460" alt="image" src="https://github.com/user-attachments/assets/65f91669-b83d-44fc-93d0-74c5f04805bb" />
 
-https://miro.com/app/board/uXjVH6lrRNM=/?moveToWidget=3458764678400359860&cot=14
 ---
 In this model, every team works one after another.
 
