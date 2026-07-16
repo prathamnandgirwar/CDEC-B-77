@@ -95,27 +95,7 @@ Instead,
 
 # 🖼️ Diagram
 
-```
-https://www.dynatrace.com/news/blog/what-is-devops/
-```
 
-Then add:
-
-```markdown
-![What is DevOps](images/devops-introduction.png)
-
-```
-                DevOps
-
-        Development ❤️ Operations
-
-               Working Together
-
-       Faster Delivery
-       Better Quality
-       Automation
-       Continuous Improvement
-```
 
 ---
 
@@ -198,6 +178,330 @@ DevOps solved this communication gap.
 ✅ DevOps automates repetitive tasks.
 
 ✅ DevOps helps companies deliver software faster.
+
+---
+
+# 😟 Problems in the Traditional IT Model
+
+Before DevOps, every team worked independently.
+
+Developers focused only on writing code.
+
+Testers focused only on testing.
+
+Operations focused only on deployment.
+
+Since these teams rarely communicated, many problems occurred.
+
+---
+
+## 📌 Common Problems
+
+### 1️⃣ Poor Communication
+
+Developers and Operations teams worked separately.
+
+Developers would say:
+
+> "The application works perfectly on my computer."
+
+Operations would reply:
+
+> "It doesn't work on the production server."
+
+Both teams blamed each other instead of solving the problem together.
+
+---
+
+### 2️⃣ Slow Software Releases
+
+Every deployment was done manually.
+
+Imagine updating WhatsApp manually for millions of users.
+
+It would take a lot of time and increase the chance of mistakes.
+
+Result:
+
+- Slow releases
+- Delayed features
+- Unhappy customers
+
+---
+
+### 3️⃣ More Human Errors
+
+Manual work increases mistakes.
+
+For example:
+
+❌ Wrong server selected
+
+❌ Wrong application version deployed
+
+❌ Incorrect configuration
+
+❌ Important files deleted accidentally
+
+These mistakes could cause the application to stop working.
+
+---
+
+### 4️⃣ Difficult Bug Fixes
+
+Suppose customers report a bug.
+
+Developers fix the issue quickly.
+
+But deployment takes another week because different teams must coordinate manually.
+
+Customers remain unhappy until the fix reaches production.
+
+---
+
+### 5️⃣ No Automation
+
+Almost everything was done manually.
+
+Examples:
+
+- Creating servers manually
+- Deploying applications manually
+- Running tests manually
+- Monitoring applications manually
+
+This consumed a lot of time.
+
+---
+
+### 6️⃣ Frequent Downtime
+
+During deployment, companies often stopped the application.
+
+Example:
+
+Imagine opening Amazon during a sale and seeing:
+
+> 🚧 "Website Under Maintenance"
+
+Customers cannot place orders.
+
+The company loses money and customer trust.
+
+---
+
+### 7️⃣ Lack of Continuous Feedback
+
+Developers rarely knew how the application performed after deployment.
+
+Without monitoring and feedback:
+
+- Bugs remained unnoticed.
+- Performance issues increased.
+- Customer complaints grew.
+
+---
+
+# 📊 Traditional Software Development Process
+
+```mermaid
+flowchart LR
+
+A[Business Requirement]
+B[Development Team]
+C[Testing Team]
+D[Operations Team]
+E[Production]
+F[Customer]
+
+A --> B
+B --> C
+C --> D
+D --> E
+E --> F
+```
+
+In this model, every team works one after another.
+
+If any issue occurs, the process starts again.
+
+This increases development time.
+
+---
+
+# 🖼️ Suggested Diagram
+
+Create this in **draw.io** and save it as:
+
+```
+images/traditional-it-workflow.png
+```
+
+```markdown
+![Traditional IT Workflow](images/traditional-it-workflow.png)
+```
+
+Suggested layout:
+
+```
+Requirement
+
+↓
+
+Development
+
+↓
+
+Testing
+
+↓
+
+Operations
+
+↓
+
+Production
+
+↓
+
+Customer
+
+❌ Very Little Communication Between Teams
+```
+
+---
+
+# 🍕 Real-Life Example
+
+Imagine a restaurant.
+
+There are three employees.
+
+👨‍🍳 Chef
+
+🧾 Cashier
+
+🚚 Delivery Boy
+
+Now imagine:
+
+The chef prepares the food.
+
+The cashier forgets to inform the delivery boy.
+
+The delivery boy waits.
+
+The food becomes cold.
+
+The customer cancels the order.
+
+Everyone blames each other.
+
+Was the food bad?
+
+❌ No.
+
+The problem was communication.
+
+Software companies faced the same issue before DevOps.
+
+---
+
+# 💡 How DevOps Solved These Problems
+
+Instead of keeping teams separate, DevOps encouraged everyone to work together.
+
+Instead of:
+
+Developer ➜ Tester ➜ Operations
+
+DevOps promotes:
+
+Developer 🤝 Tester 🤝 Operations
+
+Everyone communicates continuously.
+
+Everyone shares responsibility.
+
+Everyone works towards one goal:
+
+> Deliver better software faster.
+
+---
+
+# 📊 Traditional IT vs DevOps
+
+| Traditional IT | DevOps |
+|----------------|---------|
+| Teams work separately | Teams collaborate |
+| Manual deployment | Automated deployment |
+| Slow software delivery | Faster software delivery |
+| More human errors | Fewer human errors |
+| Limited communication | Continuous communication |
+| Long release cycles | Frequent releases |
+| Difficult maintenance | Easy monitoring and maintenance |
+
+---
+
+# 🎯 Benefits of Moving to DevOps
+
+After adopting DevOps, companies experienced many improvements.
+
+✅ Faster software delivery
+
+✅ Better collaboration
+
+✅ Reduced manual work
+
+✅ Automated testing
+
+✅ Automated deployment
+
+✅ Faster bug fixing
+
+✅ Improved customer satisfaction
+
+✅ Higher software quality
+
+---
+
+# 🌍 Real-World Example
+
+Imagine Instagram wants to introduce a new feature.
+
+📅 Traditional IT
+
+- Development → 7 Days
+- Testing → 5 Days
+- Deployment → 3 Days
+
+Total Time:
+
+**15 Days**
+
+---
+
+Using DevOps
+
+- Development
+- Automated Testing
+- Automated Deployment
+- Continuous Monitoring
+
+Total Time:
+
+**2–3 Days (or even a few hours)**
+
+This is why companies like Amazon, Netflix, Google, and Microsoft use DevOps practices.
+
+---
+
+# 🧠 Remember This
+
+> DevOps was introduced to solve problems caused by poor communication, manual work, and slow software delivery.
+
+---
+
 
 ---
 
