@@ -8,100 +8,212 @@
 
 ---
 
-# 📚 Getting Started with Operating Systems
+1. What is an Operating System?
+2. Why Do We Need an Operating System?
+3. Real-Life Example
+4. Types of Operating Systems
+5. Desktop OS vs Server OS
+6. Windows vs Unix vs Linux
+7. What is a Server?
+8. Introduction to Linux
+9. Linux Architecture
+10. Summary
+11. Quiz
+12. Homework
 
-An **Operating System (OS)** is the backbone of any computer.  
-It manages hardware and software resources and allows users to interact with the system.
+---
+# 🖥️ What is an Operating System?
+
+Imagine buying a brand-new laptop.
+
+The laptop has:
+
+- 🧠 CPU
+- 💾 RAM
+- 💽 Storage
+- ⌨️ Keyboard
+- 🖥️ Screen
+
+But...
+
+When you press the power button, nothing happens.
+
+Why?
+
+Because the computer has **hardware**, but it doesn't have an **Operating System (OS)**.
+
+The Operating System acts as a bridge between the **user** and the **computer hardware**.
+
+Without an Operating System, we cannot use a computer.
 
 ---
 
-# 🖥️ Types of Operating Systems
+## 📖 Simple Definition
 
-### 🏠 Desktop OS
-- Windows  
-- macOS  
-- Linux  
+> An **Operating System (OS)** is system software that manages computer hardware and software resources and allows users to interact with the computer.
 
-### 🖧 Server OS
-- Ubuntu Server  
-- CentOS  
-- Windows Server  
+In simple words,
 
-### 📱 Mobile OS
-- Android  
-- iOS  
-
-### 📟 Embedded OS
-Designed for specific devices such as:
-- IoT devices  
-- Routers  
+> **The Operating System is the manager of the entire computer.**
 
 ---
 
-# 🌍 How Operating Systems Impact Daily Life
+## 🏠 Real-Life Example
 
-Operating systems power:
+Imagine a school.
 
-- Personal computers
-- Mobile devices
-- Servers
-- Internet browsing
+👨‍🎓 Students
+
+👨‍🏫 Teachers
+
+🏫 Principal
+
+The Principal manages the entire school.
+
+Similarly,
+
+The Operating System manages the entire computer.
+
+It decides:
+
+- Which application can run
+- How much RAM to use
+- Which file to open
+- Which printer should print
+- Which device should connect
+
+Everything is controlled by the Operating System.nages hardware and software resources and allows users to interact with the system.
+
+---
+
+# ❓ Why Do We Need an Operating System?
+
+Without an Operating System,
+
+❌ We cannot open applications.
+
+❌ We cannot play videos.
+
+❌ We cannot browse the internet.
+
+❌ We cannot use a keyboard or mouse.
+
+❌ We cannot save files.
+
+The Operating System makes all these tasks possible.
+
+---
+
+## 💡 Responsibilities of an Operating System
+
+- 🧠 Manages CPU
+- 💾 Manages Memory (RAM)
+- 💽 Manages Storage
+- 🖨️ Controls Hardware Devices
+- 📂 Manages Files
+- 👥 Manages Users
+- 🔒 Provides Security
+
+ ---
+# 🌍 Types of Operating Systems
+
+Every Operating System is designed for a specific purpose.
+
+| Type | Used For | Examples |
+|-------|----------|----------|
+| 🏠 Desktop OS | Personal Computers | Windows, Ubuntu, macOS |
+| 🖥️ Server OS | Websites & Applications | Ubuntu Server, RHEL, CentOS |
+| 📱 Mobile OS | Smartphones | Android, iOS |
+| ⌚ Embedded OS | Smart Devices | Routers, Smart TVs, IoT |
+
+---
+
+## 🏠 Desktop Operating System
+
+Designed for everyday users.
+
+Examples:
+
+- Web Browsing
 - Gaming
-- Productivity tools
+- Watching Movies
+- Office Work
+
+Examples:
+
+- Windows
+- macOS
+- Ubuntu Desktop
 
 ---
 
-## 📊 OS Activities Table
 
-| Activity | OS Role |
-|-----------|----------|
-| Internet browsing | Runs browser |
-| Gaming | Manages CPU & RAM |
-| Video calls | Controls mic & camera |
-| Office work | Runs applications |
-| Mobile apps | Manages background apps |
+# ⚖️ Windows vs Linux
 
----
+# ⚔️ Windows vs Linux
 
-# ⚖️ Windows vs Unix vs Linux
-
-## 🏢 Ownership & Origin
-
-- **Windows** → Proprietary OS developed by Microsoft  
-- **Unix** → Developed in the 1970s; foundation for many OS  
-- **Linux** → Open-source Unix-like OS created by Linus Torvalds  
+| Feature | Windows | Linux |
+|----------|----------|---------|
+| Cost | Paid | Free |
+| Source Code | Closed | Open Source |
+| Security | Good | Excellent |
+| Performance | Heavy | Lightweight |
+| Customization | Limited | Very High |
+| Server Usage | Less Common | Most Popular |
 
 ---
 
-## 💰 Cost & Licensing
+## 🏠 Real-Life Example
 
-| OS | Licensing |
-|----|------------|
-| Windows | Paid license |
-| Unix | Licensed, often expensive |
-| Linux | Free & open-source |
+Your Gaming Laptop
 
----
+↓
 
-## 🔐 Security & Privacy
+Windows ✅
 
-- Windows → Frequent malware target  
-- Unix/Linux → Strong security features; widely trusted  
+Amazon AWS Server
 
----
+↓
 
-## 🖼️ User Interface
+Linux ✅
 
-| OS | Interface Style |
-|----|----------------|
-| Windows | GUI-focused |
-| Unix/Linux | Command-line driven (GUI optional) |
+Why?
+
+Windows is mainly designed for desktop users.
+
+Linux is designed for performance, security, and stability.
 
 ---
 
 # 🖥️ What is a Server?
 
-A **server** is a computer that provides services to other computers over a network.
+# 🖥️ What is a Server?
+
+A **Server** is a powerful computer that provides services to other computers over a network.
+
+Instead of serving one person, a server can serve thousands or even millions of users at the same time.
+
+---
+
+## 🌍 Real-Life Example
+
+When you open:
+
+📱 Instagram
+
+Your request goes to an Instagram Server.
+
+↓
+
+The server processes your request.
+
+↓
+
+The server sends back your photos and videos.
+
+Without servers,
+
+websites and mobile applications would not work.
 
 ---
 
@@ -141,113 +253,9 @@ It is known for:
 
 ---
 
-# 💻 Understanding the Linux Prompt
+<img width="1024" height="728" alt="image" src="https://github.com/user-attachments/assets/e86c9e57-9244-44d7-9a8b-a3b2dc2d77fb" />
 
-Example:  [root@localhost ~]#
+https://www.interviewbit.com/blog/linux-architecture/
 
-| Symbol | Meaning |
-|--------|----------|
-| root | Current login username |
-| localhost | Machine name / hostname |
-| ~ | Current working directory |
-| # | Root user |
-| $ | Normal/local user |
+https://www.interviewbit.com/blog/wp-content/uploads/2022/06/Linux-Architecture-1024x728.png
 
----
-
-# 🛠️ Linux Basic Commands
-
-## 👤 User & Session Commands
-
-| Command | Description |
-|----------|------------|
-| tty | Show current terminal number |
-| who | Show logged-in users |
-| whoami | Show current username |
-| logout / exit / Ctrl + D | Logout user |
-| sudo -i | Switch to root user |
-
----
-
-## 📂 File & Directory Commands
-
-| Command | Description |
-|----------|------------|
-| pwd | Present working directory |
-| cd | Change directory |
-| ls | List files |
-| ll | Detailed file listing |
-| cat | View file content |
-| clear | Clear terminal screen |
-
----
-
-## 📅 Date & Calendar Commands
-
-| Command | Description |
-|----------|------------|
-| cal | Current month calendar |
-| cal <year> | Show full year calendar |
-| cal -3 | Previous, current, next month |
-| cal -j <year> | Julian calendar |
-| date | Show current date & time |
-
----
-
-## 🔄 System Control Commands
-
-| Command | Description |
-|----------|------------|
-| reboot / init 6 | Restart system |
-| poweroff / init 0 | Power off |
-| shutdown | Shutdown after 1 min |
-| shutdown -h now | Immediate shutdown |
-| shutdown -c | Cancel shutdown |
-| hostname | Show machine name |
-
----
-
-# 📊 Commands to View System Information
-
-| Command | Description |
-|----------|------------|
-| hostnamectl | Detailed system info |
-| uname -a | OS kernel info |
-| free -h | Memory usage |
-| lsusb | USB devices |
-| lscpu | CPU information |
-| dmidecode | Hardware info (root required) |
-
----
-
-# 📖 Helping Commands
-
-| Command | Purpose |
-|----------|----------|
-| man <command> | Full manual |
-| info <command> | Alternative manual |
-| whatis <command> | One-line description |
-| <command> --help | Short help |
-| which <command> | Show command path |
-
----
-
-# 🎯 Summary
-
-- Operating Systems manage hardware and software.
-- Linux is powerful, secure, and widely used in servers.
-- Understanding Linux commands is essential for DevOps & Cloud.
-- Mastering CLI improves system administration skills.
-
----
-
-## 🚀 Next Step
-
-Practice commands on:
-- Local Linux machine
-- Virtual machine
-- Cloud server (AWS EC2)
-
----
-
-⭐ *Keep practicing. The Linux terminal is your best friend in DevOps!*
