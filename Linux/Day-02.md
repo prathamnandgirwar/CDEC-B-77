@@ -274,6 +274,8 @@ One day, your application gets **10 lakh users** instead of **1,000 users**.
 
 > 🚀 **Remember:** AWS allows companies like Netflix to focus on building great applications instead of worrying about managing physical servers.
 
+---
+
 # 📈 Scalability and Flexibility of Business with AWS
 
 - Elastic scaling to meet demand  
