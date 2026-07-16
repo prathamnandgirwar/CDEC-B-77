@@ -17,10 +17,6 @@
 7. What is a Server?
 8. Introduction to Linux
 9. Linux Architecture
-10. Summary
-11. Quiz
-12. Homework
-
 ---
 # 🖥️ What is an Operating System?
 
@@ -255,7 +251,4 @@ It is known for:
 
 <img width="1024" height="728" alt="image" src="https://github.com/user-attachments/assets/e86c9e57-9244-44d7-9a8b-a3b2dc2d77fb" />
 
-https://www.interviewbit.com/blog/linux-architecture/
-
-https://www.interviewbit.com/blog/wp-content/uploads/2022/06/Linux-Architecture-1024x728.png
-
+---
