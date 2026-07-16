@@ -305,10 +305,6 @@ Without monitoring and feedback:
 # 📊 Traditional Software Development Process
 
 ```
-<img width="3392" height="460" alt="image" src="https://github.com/user-attachments/assets/d1c45936-86e3-41e7-b2ef-932c9beb31ee" />
-
-
-```
 
 In this model, every team works one after another.
 
@@ -316,12 +312,6 @@ If any issue occurs, the process starts again.
 
 This increases development time.
 
----
-
-<img width="904" height="1727" alt="image" src="https://github.com/user-attachments/assets/7b5f725f-d737-4bd3-a0cb-acd49776a13d" />
-
-
-```
 
 ---
 
