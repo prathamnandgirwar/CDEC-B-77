@@ -144,8 +144,6 @@ Examples:
 ---
 
 
-# ⚖️ Windows vs Linux
-
 # ⚔️ Windows vs Linux
 
 | Feature | Windows | Linux |
