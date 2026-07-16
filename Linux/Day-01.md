@@ -303,8 +303,7 @@ Without monitoring and feedback:
 
 # 📊 Traditional Software Development Process
 
-```
-
+---
 In this model, every team works one after another.
 
 If any issue occurs, the process starts again.
