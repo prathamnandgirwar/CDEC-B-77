@@ -9,7 +9,7 @@ Execute Mode allows you to run commands for file operations, searching, and othe
 
 To enter Execute Mode, press:
 
-##:
+:
 
 ---
 
