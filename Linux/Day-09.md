@@ -1,192 +1,676 @@
-# Day 9: Managing Users and Permissions in Linux
+# 📘 Day 9: Managing Users and Permissions in Linux
 
-## Overview of User and Permission Management
-User and permission management is essential for securing a Linux system and controlling access to resources. This involves creating, modifying, and managing users, groups, and permissions to ensure proper access control.
+## 🎯 Learning Objectives
 
-## Practical
-Identify the current user
+By the end of this session, you will be able to:
+
+- Understand what a user is in Linux.
+- Learn different types of users.
+- Create, modify, and delete users.
+- Manage groups.
+- Set user passwords.
+- Understand important user-related files.
+- Switch between users.
+- Verify user and group information.
+
+---
+
+# 🤔 Why Do We Need Users?
+
+Imagine a company where 100 employees use the same Linux server.
+
+Without user accounts:
+- Everyone can access everyone else's files.
+- Anyone can delete important data.
+- No accountability.
+
+With user accounts:
+- Every user gets their own workspace.
+- Files remain secure.
+- Permissions can be controlled.
+- Activities can be tracked.
+
+This is why Linux is considered one of the most secure operating systems.
+
+---
+
+# 👤 What is a User?
+
+A **User** is a person (or service) that uses the Linux operating system.
+
+Every user has:
+
+- Username
+- Password
+- User ID (UID)
+- Group ID (GID)
+- Home Directory
+- Login Shell
+
+Example:
+
+```
+Username : john
+UID      : 1001
+Home     : /home/john
+Shell    : /bin/bash
+```
+
+---
+
+# 👥 Types of Users in Linux
+
+## 1️⃣ Root User (Super User)
+
+The most powerful user in Linux.
+
+### Features
+
+- Full access to the system
+- Can create/delete users
+- Can install software
+- Can modify any file
+- Can shut down the server
+
+Default Details
+
+```
+Username : root
+UID       : 0
+Shell     : /bin/bash
+```
+
+---
+
+## 2️⃣ System User
+
+Created automatically while installing Linux or applications.
+
+Used by services like:
+
+- Apache
+- MySQL
+- Nginx
+- Docker
+- Jenkins
+
+Characteristics
+
+- Cannot login normally
+- Used only by system services
+- Limited permissions
+
+Typical Details
+
+```
+UID   : 1 - 999
+Shell : /sbin/nologin
+```
+
+Example
+
+```
+mysql
+www-data
+daemon
+```
+
+---
+
+## 3️⃣ Standard User (Normal User)
+
+Created by the administrator.
+
+Used for daily work.
+
+Characteristics
+
+- Limited permissions
+- Own home directory
+- Can access only permitted files
+
+Typical Details
+
+```
+UID   : 1000+
+Shell : /bin/bash
+```
+
+Example
+
+```
+john
+rahul
+pratham
+```
+
+---
+
+# 🧑‍💻 Identify the Current User
+
+Display the currently logged-in user.
+
 ```bash
 whoami
 ```
 
-View all users on the system
+Example Output
+
+```
+ubuntu
+```
+
+---
+
+# 👀 View All Users
+
+Display all users available in Linux.
+
 ```bash
 cat /etc/passwd
 ```
 
-## User Administration
+Example Output
 
-### 1. User
-A user is a person who utilizes computer or network services.  
-Linux is secured because one user can’t access the files of another user without permission.
-
-### 2. Types of Users
-
-#### 1) Super User (Root User)
-Has root privileges and full access to the OS  
-Shell used: /bin/bash  
-UID: 0  
-
-#### 2) System User
-Created automatically during installation  
-Used by system services  
-Shell used: /sbin/nologin  
-UID: 1–999  
-Has moderate privileges  
-
-#### 3) Standard User
-Also known as local user  
-Used for day-to-day server work  
-Limited privileges  
-Shell used: /bin/bash  
-UID: 1000–60000+  
-
-## User Related Files
-/etc/passwd  
-/etc/shadow  
-
-## Group Related Files
-/etc/group  
-/etc/gshadow  
-
-## Files Created When a User Is Created
-
-/etc/passwd (7 fields)  
-→ Stores user profile information  
-
-/etc/shadow (9 fields)  
-→ Stores encrypted passwords and password policies  
-
-/etc/group (4 fields)  
-→ Stores group-related information  
-
-/etc/gshadow (4 fields)  
-→ Stores group passwords and members list  
-
-Home directory & mail account  
-→ /home/<username> and /var/spool/mail  
-
-Skeleton files  
-→ Stored in /etc/skel  
-→ Copied to user’s home directory  
-→ Default profile files  
-
-## Skeleton Files Explanation
-
-.bash_logout  
-Executes when user logs out  
-
-.bash_profile  
-Executes at first login  
-Sources .bashrc  
-Used for environment variables and aliases  
-
-.bashrc  
-Sources /etc/bashrc  
-Used for aliases  
-Loaded for every shell  
-
-.bash_history  
-Stores command history  
-Created after logout & login  
-NOT copied from /etc/skel  
-
-## Using useradd Command
-
-Syntax
-```bash
-useradd [options] username
+```
+root:x:0:0:root:/root:/bin/bash
+ubuntu:x:1000:1000:Ubuntu:/home/ubuntu:/bin/bash
 ```
 
-Options  
--m → Create home directory  
--s → Specify shell  
--G → Add to supplementary groups  
+---
 
-Practical: Add User
+# 📂 Important User & Group Files
+
+| File | Purpose |
+|------|----------|
+| `/etc/passwd` | Stores user information |
+| `/etc/shadow` | Stores encrypted passwords |
+| `/etc/group` | Stores group information |
+| `/etc/gshadow` | Stores secure group information |
+
+---
+
+# 📄 Files Updated When a User Is Created
+
+Whenever a new user is created, Linux automatically updates these files:
+
+## 1. `/etc/passwd`
+
+Stores:
+
+- Username
+- UID
+- GID
+- Home directory
+- Shell
+
+---
+
+## 2. `/etc/shadow`
+
+Stores:
+
+- Encrypted password
+- Password expiry
+- Password aging policies
+
+---
+
+## 3. `/etc/group`
+
+Stores:
+
+- Group names
+- Group IDs
+- Group members
+
+---
+
+## 4. `/etc/gshadow`
+
+Stores:
+
+- Group password
+- Secure group membership
+
+---
+
+## 5. Home Directory
+
+Created inside:
+
+```
+/home/username
+```
+
+Example
+
+```
+/home/john
+```
+
+---
+
+## 6. Mailbox
+
+Created inside
+
+```
+/var/spool/mail/
+```
+
+---
+
+## 7. Skeleton Files
+
+Default files are copied from:
+
+```
+/etc/skel
+```
+
+---
+
+# 🗂 Skeleton Files
+
+Skeleton files are default configuration files copied into every new user's home directory.
+
+Check skeleton files:
+
+```bash
+ls -la /etc/skel
+```
+
+Typical Output
+
+```
+.bash_logout
+.bash_profile
+.bashrc
+```
+
+---
+
+## `.bash_logout`
+
+Runs when the user logs out.
+
+Example use:
+
+- Cleanup
+- Remove temporary files
+
+---
+
+## `.bash_profile`
+
+Runs only once after login.
+
+Usually used for:
+
+- Environment variables
+- PATH
+- Startup scripts
+
+---
+
+## `.bashrc`
+
+Runs every time a new terminal opens.
+
+Usually contains:
+
+- Aliases
+- Prompt customization
+- Functions
+
+---
+
+## `.bash_history`
+
+Stores command history.
+
+Example:
+
+```bash
+history
+```
+
+Location
+
+```
+~/.bash_history
+```
+
+> **Note:** This file is created automatically after the user starts using the shell. It is **not** copied from `/etc/skel`.
+
+---
+
+# ➕ Create a New User
+
+Syntax
+
+```bash
+sudo useradd [options] username
+```
+
+Common Options
+
+| Option | Description |
+|---------|-------------|
+| `-m` | Create home directory |
+| `-s` | Specify login shell |
+| `-G` | Add to supplementary groups |
+
+Example
+
 ```bash
 sudo useradd -m -s /bin/bash john
 ```
 
-Verify User
+---
+
+# ✅ Verify User
+
 ```bash
 id john
 ```
 
-Switch User
-```bash
-su - john
+Example Output
+
+```
+uid=1001(john)
+gid=1001(john)
+groups=1001(john)
 ```
 
-## Setting User Password
+---
+
+# 🔑 Set User Password
+
 ```bash
 sudo passwd john
 ```
 
-## /etc/passwd Fields
-Username  
-Linked password  
-UID  
-GID  
-Comment  
-Home directory  
-Shell  
+Example
 
-## Managing User Groups
+```
+New password:
+Retype new password:
+passwd: password updated successfully
+```
 
-Commands  
-groupadd → Create group  
-usermod -aG → Add user to group  
-groups → Show groups  
+---
 
-Practical
+# 🔄 Switch User
+
+Login as another user.
+
+```bash
+su - john
+```
+
+Check current user:
+
+```bash
+whoami
+```
+
+Exit:
+
+```bash
+exit
+```
+
+---
+
+# 📄 Understanding `/etc/passwd`
+
+Example Entry
+
+```
+john:x:1001:1001:John:/home/john:/bin/bash
+```
+
+| Field | Meaning |
+|--------|----------|
+| john | Username |
+| x | Password stored in `/etc/shadow` |
+| 1001 | User ID (UID) |
+| 1001 | Group ID (GID) |
+| John | Comment (GECOS) |
+| /home/john | Home Directory |
+| /bin/bash | Login Shell |
+
+---
+
+# 👥 Group Management
+
+A **Group** is a collection of users.
+
+Instead of giving permissions to each user individually, permissions can be assigned to the group.
+
+Example:
+
+```
+Developers
+Admins
+QA
+HR
+```
+
+---
+
+# ➕ Create a Group
+
 ```bash
 sudo groupadd developers
+```
+
+---
+
+# ➕ Add User to a Group
+
+```bash
 sudo usermod -aG developers john
+```
+
+> **Note:** Always use `-aG`. Without `-a`, the user may be removed from existing supplementary groups.
+
+---
+
+# 👀 Check User Groups
+
+```bash
 groups john
+```
+
+Example Output
+
+```
+john developers
+```
+
+---
+
+# Verify Group
+
+```bash
 cat /etc/group | grep developers
 ```
 
-## Removing Users
+---
 
-Remove User
+# 🗑 Remove User
+
+Delete only the user account:
+
 ```bash
 sudo userdel john
 ```
 
-Remove User with Home Directory
+---
+
+Delete user along with the home directory:
+
 ```bash
 sudo userdel -r john
 ```
 
-## Affected System Files
-/etc/passwd → User details  
-/etc/shadow → Passwords  
-/etc/group → Group details  
+---
 
-Practical
+# 📂 Check User Home Directories
+
+List all home directories:
+
 ```bash
-cat /etc/passwd
-cat /etc/group
+ls /home
 ```
 
-## User Home Directories
+View a specific user's home directory:
+
+```bash
+sudo ls /home/john
+```
+
+---
+
+# 🔄 Switching Between Users
+
+Login without loading the user's environment:
+
+```bash
+su john
+```
+
+Login with the user's environment:
+
+```bash
+su - john
+```
+
+Exit the current session:
+
+```bash
+exit
+```
+
+---
+
+# 📌 Summary
+
+| Command | Purpose |
+|----------|---------|
+| `whoami` | Show current user |
+| `cat /etc/passwd` | List all users |
+| `useradd` | Create a user |
+| `passwd` | Set/change password |
+| `id` | Display user information |
+| `su - username` | Switch user |
+| `groupadd` | Create a group |
+| `usermod -aG` | Add user to a group |
+| `groups` | Show group membership |
+| `userdel` | Delete a user |
+| `userdel -r` | Delete user and home directory |
+| `sudo -i` | Switch to root |
+| `sudo -l` | View sudo permissions |
+
+---
+
+# 🧪 Hands-on Lab
+
+### Step 1: Create a User
+
+```bash
+sudo useradd -m -s /bin/bash john
+```
+
+---
+
+### Step 2: Set Password
+
+```bash
+sudo passwd john
+```
+
+---
+
+### Step 3: Verify User
+
+```bash
+id john
+```
+
+---
+
+### Step 4: Switch User
+
+```bash
+su - john
+whoami
+exit
+```
+
+---
+
+### Step 5: Create a Group
+
+```bash
+sudo groupadd developers
+```
+
+---
+
+### Step 6: Add User to Group
+
+```bash
+sudo usermod -aG developers john
+```
+
+---
+
+### Step 7: Verify Group Membership
+
+```bash
+groups john
+```
+
+---
+
+### Step 8: Verify Group Entry
+
+```bash
+cat /etc/group | grep developers
+```
+
+---
+
+### Step 9: View Home Directory
+
 ```bash
 ls /home
 sudo ls /home/john
 ```
 
-## Switching Between Users
+---
 
-Using su
+### Step 10: Remove User
+
 ```bash
-su john
-exit
+sudo userdel -r john
 ```
 
-Using sudo
-```bash
-sudo apt update
-sudo -l
-```
+---
 
+# 🎯 Key Takeaways
+
+- Linux is a multi-user operating system.
+- Every user has a unique UID.
+- Root user has unrestricted access.
+- System users run background services.
+- Standard users perform daily tasks.
+- Groups simplify permission management.
+- User details are stored in `/etc/passwd`.
+- Passwords are stored securely in `/etc/shadow`.
+- Default user configuration comes from `/etc/skel`.
+- Use `sudo` carefully, as it grants administrative privileges.
