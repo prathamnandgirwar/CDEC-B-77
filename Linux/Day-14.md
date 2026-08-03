@@ -604,59 +604,6 @@ By the end of this session, you should understand:
 
 ---
 
-# 🧪 Practice Questions
-
-## Basic Questions
-
-1. What is archiving?
-2. What is compression?
-3. What is the difference between archiving and compression?
-4. What is the purpose of the `tar` command?
-5. What does the `-c` option do?
-6. What does the `-x` option do?
-7. What does the `-f` option do?
-8. What does the `-v` option do?
-9. What does the `-C` option do?
-10. What is the difference between `.tar` and `.tar.gz`?
-
-## Practical Questions
-
-1. Create a directory called `backup`.
-2. Create 5 files inside it.
-3. Create a `backup.tar` archive.
-4. List the contents of the archive without extracting it.
-5. Extract the archive into another directory.
-6. Create a gzip-compressed archive.
-7. Create a bzip2-compressed archive.
-8. Create an xz-compressed archive.
-9. Compare their sizes using `du -sh`.
-10. Extract each archive into a separate directory.
-
----
-
-# 🚀 Real-World DevOps Example
-
-In a real DevOps environment, archiving and compression are commonly useful for:
-
-    Application Logs
-           ↓
-         Archive
-           ↓
-       Compress
-           ↓
-      backup.tar.gz
-           ↓
-      Upload / Transfer
-           ↓
-      S3 / Backup Server
-
-For example, before transferring application logs from one server to another:
-
-    tar -czvf app_logs.tar.gz /var/log/myapp/
-
-The compressed archive can then be transferred or stored as a backup.
-
----
 
 # 📚 Summary
 
